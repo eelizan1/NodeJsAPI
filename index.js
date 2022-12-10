@@ -7,6 +7,7 @@ const { response } = require("express");
 
 const app = express();
 app.use(express.json()); // middleware that parses req into json
+app.use(cors());
 
 // defines a new rout GET
 // req: request coming from client
